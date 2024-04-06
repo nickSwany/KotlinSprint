@@ -1,6 +1,6 @@
 package com.example.kotlinsprint
 
-fun main(){
+fun main() {
 
     val crystal = 7
     val iron = 11

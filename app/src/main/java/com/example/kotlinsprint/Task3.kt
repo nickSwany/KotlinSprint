@@ -3,13 +3,15 @@ package com.example.kotlinsprint
 fun main() {
 
     val year = 1961
-    var hour = "09"
-    var minutees = "07"
+    val hours = "09"
+    val minutes = "07"
 
-    //println("$year\n$hour\n$minutees")
+    println("Год полета - $year")
 
-    hour = "10"
-    minutees = "55"
-    println("$hour:$minutees")
+    println("Взлет - $hours:$minutes")
+
+    val hourArrivale = "10"
+    val minutesArraivale = "55"
+    println("Посадка - $hourArrivale:$minutesArraivale")
 
 }

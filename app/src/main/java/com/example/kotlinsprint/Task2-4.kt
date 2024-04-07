@@ -1,13 +1,14 @@
 package com.example.kotlinsprint
 
+const val PERCENT = 100
 fun main() {
 
     val crystal = 7
     val iron = 11
-    val buff = 0.2
+    val buff = 20
 
-    val crystalWithBuff = (crystal * buff).toInt()
-    val ironWithBuff = (iron * buff).toInt()
+    val crystalWithBuff = (crystal * buff / PERCENT).toInt()
+    val ironWithBuff = (iron * buff / PERCENT).toInt()
 
     println("Кристаллическая руда - $crystalWithBuff\nЖелезная руда - $ironWithBuff")
 }

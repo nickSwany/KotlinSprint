@@ -4,16 +4,14 @@ fun main() {
 
     val name = "Татьяна"
     val patronymic = "Сергеевна"
-    val surnameAfterWedding = "Сидорова"
-    val surnameBeforeWedding = "Андреева"
+    var surname = "Сидорова"
     val nameAndPatronymic = "$name $patronymic"
-    val yearsBeforeWedding = 20
-    val yearsAfterWedding = 22
+    var age = 20
 
-    println(
-        """
-        $surnameBeforeWedding $nameAndPatronymic, $yearsBeforeWedding
-        $surnameAfterWedding $nameAndPatronymic, $yearsAfterWedding
-    """.trimIndent()
-    )
+    println("$surname $nameAndPatronymic, $age")
+
+    surname = "Андреева"
+    age = 22
+
+    println("$surname $nameAndPatronymic, $age")
 }

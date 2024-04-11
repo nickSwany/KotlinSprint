@@ -7,7 +7,7 @@ fun main() {
 
     val example = 2 + 2 * 2
 
-    val answer = readLine()?.toIntOrNull()
+    val answer = readln().toIntOrNull()
     val result = if (answer == example) "Добпро пожаловать!"
     else "Доступ запрещен!"
 

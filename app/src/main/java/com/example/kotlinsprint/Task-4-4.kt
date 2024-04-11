@@ -4,18 +4,16 @@ fun main() {
 
     val dayTraining = 5
 
-    val groupOfExercise = (dayTraining % 2 == 1)
+    val groupOfExercise = (dayTraining % 2 == 0)
 
-    val handExercise = groupOfExercise
-    val pressExercise = groupOfExercise
-    val legExercise = !groupOfExercise
-    val backExercise = !groupOfExercise
+    val handExercise = !groupOfExercise
+    val pressExercise = !groupOfExercise
 
     println(
         """
         Упражнение для рук: $handExercise
-        Упражнение для ног: $legExercise
-        Упражнение для спины: $backExercise
+        Упражнение для ног: $groupOfExercise
+        Упражнение для спины: $groupOfExercise
         Упражнение для пресса: $pressExercise
     """.trimIndent()
     )

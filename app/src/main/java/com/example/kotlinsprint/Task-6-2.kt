@@ -6,11 +6,9 @@ fun main() {
 
     val seconds = readln().toIntOrNull() ?: 0
 
-    for (i in seconds downTo 1) {
-        Thread.sleep(1000)
-        if (i == 1) {
-            println("Прошло $seconds секунд")
-            return
-        }
+    while (true) {
+        Thread.sleep((seconds * 1000).toLong())
+        println("Прошло $seconds секунд")
+        return
     }
 }

@@ -6,7 +6,7 @@ fun main() {
 
     val seconds = readln().toIntOrNull() ?: 0
 
-    while (true) {
+    while (seconds > 0) {
         Thread.sleep((seconds * 1000).toLong())
         println("Прошло $seconds секунд")
         return

@@ -17,12 +17,11 @@ fun main() {
     do {
         println("Введите логин")
         val login = readln()
-    } while (login != userLogin)
 
-    do {
         println("Введите пароль")
         val password = readln()
-    } while (password != userPassword)
+
+    } while (login != userLogin || password != userPassword)
 
     do {
         val number1 = Random.nextInt(1..9)

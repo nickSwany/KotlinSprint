@@ -25,8 +25,7 @@ fun main() {
             return
         } else {
             println("Увы, неверно!\nОсталось ${--attemp} попыток")
-            if (attemp == 0) println("Было загадано число $number")
-            continue
         }
     }
+    println("Было загадано число $number")
 }

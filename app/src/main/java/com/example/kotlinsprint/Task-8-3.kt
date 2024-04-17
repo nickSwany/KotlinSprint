@@ -6,12 +6,10 @@ fun main() {
 
     println("Введите наименование игредиента, который хотите найти")
 
-    when (val userIngr = readln()) {
-        ingredient[0] -> println("Ингредиент $userIngr в рецепте есть")
-        ingredient[1] -> println("Ингредиент $userIngr в рецепте есть")
-        ingredient[2] -> println("Ингредиент $userIngr в рецепте есть")
-        ingredient[3] -> println("Ингредиент $userIngr в рецепте есть")
-        ingredient[4] -> println("Ингредиент $userIngr в рецепте есть")
-        else -> println("Такого ингредиента в рецепте нет")
-    }
+    val userIngr = readln()
+
+    val indexOfIngr = ingredient.indexOf(userIngr)
+
+    if (indexOfIngr == -1) println("Такого ингредиента нет")
+    else println("Ингредиент $userIngr в рецепте есть")
 }

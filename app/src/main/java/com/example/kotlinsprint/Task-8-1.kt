@@ -1,16 +1,13 @@
 package com.example.kotlinsprint
 
-import kotlin.random.Random
-import kotlin.random.nextInt
-
 fun main() {
-    val viewsInMon = Random.nextInt(1..100)
-    val viewsInTue = Random.nextInt(1..100)
-    val viewsInWed = Random.nextInt(1..100)
-    val viewsInThu = Random.nextInt(1..100)
-    val viewsInFri = Random.nextInt(1..100)
-    val viewsInSat = Random.nextInt(1..100)
-    val viewsInSun = Random.nextInt(1..100) // решил сделать количество просмотров рандомными
+    val viewsInMon = (1..100).random()
+    val viewsInTue = (1..100).random()
+    val viewsInWed = (1..100).random()
+    val viewsInThu = (1..100).random()
+    val viewsInFri = (1..100).random()
+    val viewsInSat = (1..100).random()
+    val viewsInSun = (1..100).random()
     var sumViews = 0
 
     val viewsInWeek = arrayOf(

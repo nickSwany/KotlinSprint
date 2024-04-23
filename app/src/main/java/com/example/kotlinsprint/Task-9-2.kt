@@ -11,7 +11,7 @@ fun main() {
 
     val userAnswer = readln()
 
-    if (userAnswer.lowercase() == "да") {
+    if (userAnswer.equals("да", ignoreCase = true)) {
         println("Какой ингредиент желаете добавить?")
         val userIngredients = readln()
 

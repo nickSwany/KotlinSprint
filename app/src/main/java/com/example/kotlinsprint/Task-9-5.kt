@@ -11,13 +11,9 @@ fun main() {
         ingredients.add(userIngredients.toLowerCase())
     }
 
-    val sortedIngr = ingredients.sorted().toMutableList()
+    val sortedIngr = ingredients.sorted()
 
-    sortedIngr.firstOrNull()?.let { ingr ->
-        sortedIngr[0] = ingr
-    }
-
-    val result = sortedIngr.joinToString(", ").capitalize() //Правильно ли я понял, что стоит просто перенести в эту часть и все?
+    val result = sortedIngr.joinToString(", ").replaceFirstChar { it.uppercase() }
 
     println(result)
 }

@@ -3,25 +3,24 @@ package com.example.kotlinsprint
 const val MIN_LENGTH = 4
 
 fun main() {
-    checkLength()
-}
-
-fun userLogin(): String {
     println("Придумайте логин:")
-    return readln()
 
-}
+    val userLogin = userLoginAndPassword()
 
-fun userPassword(): String {
     println("Придумайте пароль:")
-    return readln()
 
+    val userPassword = userLoginAndPassword()
+
+    if (checkLength(userLogin) && checkLength(userPassword)) println("Добро пожаловать")
+
+    else println("Логин или пароль недостаточно длинные")
 }
 
-fun checkLength() {
-    val lengthLogin = userLogin().length
-    val lengthPassword = userPassword().length
+fun userLoginAndPassword(): String {
+    return readln()
+}
 
-    if (lengthLogin >= MIN_LENGTH && lengthPassword >= MIN_LENGTH) println("Добро пожаловать")
-    else println("Логин или пароль недостаточно длинные")
+fun checkLength(userText: String): Boolean {
+    val length = userText.length
+    return length >= MIN_LENGTH
 }

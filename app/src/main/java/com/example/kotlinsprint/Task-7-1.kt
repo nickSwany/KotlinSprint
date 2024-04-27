@@ -4,18 +4,18 @@ import kotlin.random.Random
 
 fun main() {
 
-    val char = ('a'.toInt()..'z'.toInt())
-    val numbers = ('0'.toInt()..'9'.toInt())
+    val char = 'a'..'z'
+    val numbers = '0'..'9'
 
     val passwordLength = 6
     val passwordStrBuiilding = StringBuilder()
 
     for (i in 0 until passwordLength) {
         if (i % 2 == 0) {
-            val randomChar = Random.nextInt(char.first, char.last + 1).toChar()
+            val randomChar = char.random()
             passwordStrBuiilding.append(randomChar)
         } else {
-            val randomNumber = Random.nextInt(numbers.first, numbers.last + 1).toChar()
+            val randomNumber = numbers.random()
             passwordStrBuiilding.append(randomNumber)
         }
     }

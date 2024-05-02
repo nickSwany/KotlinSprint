@@ -19,13 +19,10 @@ fun main() {
     } while (passwordLength < MIN_LENGTH_PASSWORD)
 
     for (i in 0 until passwordLength) {
-        val randomChar = char.random()
-        val randomCharUpper = charUpper.random()
-        val randomNumber = numbers.random()
         when (Random.nextInt(1..3)) {
-            1 -> passwordStr.append(randomChar)
-            2 -> passwordStr.append(randomCharUpper)
-            3 -> passwordStr.append(randomNumber)
+            1 -> passwordStr.append(char.random())
+            2 -> passwordStr.append(charUpper.random())
+            3 -> passwordStr.append(numbers.random())
         }
     }
 
